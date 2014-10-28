@@ -6,5 +6,6 @@ RUN rm -rf /etc/nginx/*
 RUN mkdir -p /etc/nginx/conf.d /etc/nginx/host.d /etc/nginx/nginx.d
 ADD etc /etc
 ADD srv /srv
+ADD init /init
 ADD supervisor.conf /etc/supervisor/conf.d/nginx.conf
 EXPOSE 80
